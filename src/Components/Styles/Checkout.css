@@ -1,0 +1,56 @@
+.complete-title {
+    font-size: 50px;
+    background-color: black;
+    height: 80px;
+    color: blueviolet;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 75px orange, 0 0 100px orange;
+
+
+    font-weight: bolder;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+input {
+      padding: 10px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    
+}
+
+input:focus {
+    outline: none;
+  border: 2px solid blueviolet;
+}
+
+
+.complete-order-btn {
+    background-color: orange;
+    color: black;
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 30px;
+    bottom: 50px;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+
+.continue-shopping-checkout {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 30px;
+    bottom: 50px;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 300px;
+}

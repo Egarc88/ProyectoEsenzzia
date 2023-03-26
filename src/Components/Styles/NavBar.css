@@ -1,0 +1,104 @@
+.header {
+  height: 300px;
+ 
+}
+
+.img1 {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .logo {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    animation-name: fade-in-out;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fade-in-out {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  
+  
+  .navi {
+    font-weight: bolder;
+    font-size: 150%;
+    height: 100px;
+    width: 100%;
+    margin-top: 50px;
+    
+
+
+  }
+
+  .nav-bar {
+    text-align: center;
+    font-size: 30px;
+  
+  }
+
+  .carousel {
+    margin-bottom: 20%;
+    margin-top: -80px;
+  }
+
+  .carrousel-img {
+    object-fit: cover;
+    height: 600px;
+}
+
+.carrousel-text {
+    display: inline-block;
+    color: black;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 75px orange, 0 0 100px orange;
+
+    font-size: 25px;
+    font-weight: bolder;
+    
+    
+}
+
+.navegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+}
+
+.navegacion a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  height: 100%;
+  padding: 0 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navegacion a:hover,
+.navegacion a.claseActive {
+  color:orange;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange
+
+}
