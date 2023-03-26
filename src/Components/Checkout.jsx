@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { collection, addDoc} from "firebase/firestore";
 import { Link } from 'react-router-dom';
-import {db} from '.././FirebaseConfig/fireBase';
+import { db } from '../FirebaseConfig/firebase';
 import { useCartContext } from "../Context/CartContext";
 import Spinner from './Spinner';
 
 const Checkout = () => {
 
-    const {cart, totalPrice, clearCart}= useCartContext(useCartContext)
+    const {cart, totalPrice, clearCart}= useCartContext()
 
     const [load, setLoad] = useState(false)
     const [orderID, setOrderID] = useState()
@@ -47,9 +47,7 @@ const Checkout = () => {
         const total = totalPrice()
         const data = {buyer,items,day,total}
         console.log("data",data)  
-        generateOrder(data)
-        
-        
+        generateOrder(data)       
     }
     
 
@@ -115,4 +113,4 @@ const Checkout = () => {
     )
 }
 
-export default Checkout
+export default Checkout;
